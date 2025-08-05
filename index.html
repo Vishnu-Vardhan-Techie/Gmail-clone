@@ -3,34 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style1.css" rel="stylesheet">
-    <title>Slack</title>
+    <title>Gmail Clone</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <img src="https://previews.us-east-1.widencdn.net/preview/48045879/assets/asset-view/8588de84-f8ed-4488-a456-45ba986280ee/thumbnail/eyJ3IjoyMDQ4LCJoIjoyMDQ4LCJzY29wZSI6ImFwcCJ9?sig.ver=1&sig.keyId=us-east-1.20240821&sig.expires=1754409600&sig=mihP8Pc9poR1CtllYfUSyMRYRAaOH7URgNuGsTVpkNQ" alt="Slack Logo" class="logo">
-        <nav class="navbar">
-            <ul class="navbar-list1">
-                <li><a href="#" class="item">Product</a></li>
-                <li><a href="#" class="item">Solution</a></li>
-                <li><a href="#" class="item">Enterprise</a></li>
-                <li><a href="#" class="item">Resources</a></li>
-                <li><a href="#" class="item">Pricing</a></li>
-            </ul>
-            <ul class="navbar-list2">
-                <li><a href="#" class="item1">TALK TO SALES</a></li>
-                <li><a href="#" class="item2">TRY FOR FREE</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section class="container">
-        <h2 class="head">One platform for your team and your work</h2>
-        <div class="images">
-            <img src="image1.svg" alt="Desktop web" class="img1">
-            <div class="image-1">
-                <img src="image2.svg" alt="Mobile web" class="img2">
+
+    <div class="gmail-app">
+        <header class="header">
+            <div class="header__left">
+                <i class="material-icons">menu</i>
+                <img src="https://ssl.gstatic.com/ui/v1/icons/mail/rfr/logo_gmail_lockup_default_1x_r2.png" alt="Gmail Logo" class="header__logo">
             </div>
+            <div class="header__center">
+                <input type="text" placeholder="Search mail">
+                <i class="material-icons">search</i>
+            </div>
+            <div class="header__right">
+                <i class="material-icons">apps</i>
+                <i class="material-icons">notifications</i>
+                <img src="https://via.placeholder.com/32" alt="User Avatar" class="avatar">
+            </div>
+        </header>
+
+        <div class="main-content">
+            <aside class="sidebar">
+                <div class="sidebar__compose">
+                    <i class="material-icons">add</i>
+                    <span>Compose</span>
+                </div>
+                <div class="sidebar__menu">
+                    <div class="sidebar__option active">
+                        <i class="material-icons">inbox</i>
+                        <span>Inbox</span>
+                    </div>
+                    <div class="sidebar__option">
+                        <i class="material-icons">star</i>
+                        <span>Starred</span>
+                    </div>
+                    <div class="sidebar__option">
+                        <i class="material-icons">send</i>
+                        <span>Sent</span>
+                    </div>
+                    </div>
+            </aside>
+
+            <main class="email-list">
+                <div class="email-list__row">
+                    <div class="email-row__options">
+                        <input type="checkbox">
+                        <i class="material-icons">star_border</i>
+                    </div>
+                    <div class="email-row__subject">
+                        <h3>Subject Title</h3>
+                    </div>
+                    <div class="email-row__message">
+                        <h4>
+                            <span class="email-row__body">
+                                This is the email body content and it can be quite long...
+                            </span>
+                        </h4>
+                    </div>
+                    <p class="email-row__time">12:30 PM</p>
+                </div>
+                </main>
         </div>
-    </section>
+    </div>
 </body>
 </html>

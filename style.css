@@ -1,0 +1,167 @@
+/* Basic Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #f6f8fc;
+    color: #5f6368;
+}
+
+.material-icons {
+    color: #5f6368;
+    cursor: pointer;
+}
+
+.gmail-app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.header__left,
+.header__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.header__logo {
+    height: 27px;
+}
+
+.header__center {
+    display: flex;
+    align-items: center;
+    background-color: #eaf1fb;
+    border-radius: 8px;
+    padding: 0 15px;
+    flex-grow: 1;
+    max-width: 600px;
+}
+
+.header__center input {
+    border: none;
+    background: none;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    outline: none;
+}
+
+.avatar {
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+}
+
+/* Main Content and Sidebar Styling */
+.main-content {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    flex-grow: 1;
+}
+
+.sidebar {
+    padding: 15px 10px;
+    background-color: #fff;
+    border-right: 1px solid #e0e0e0;
+}
+
+.sidebar__compose {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #c2e7ff;
+    padding: 15px;
+    border-radius: 28px;
+    font-weight: 500;
+    color: #001d35;
+    cursor: pointer;
+    margin-bottom: 15px;
+    width: 150px;
+}
+
+.sidebar__option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.2s ease;
+}
+
+.sidebar__option:hover {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+}
+
+.sidebar__option.active {
+    background-color: #e8f0fe;
+    color: #1a73e8;
+    font-weight: 700;
+}
+
+/* Email List Styling */
+.email-list {
+    overflow-y: auto;
+}
+
+.email-list__row {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 1px solid #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.email-list__row:hover {
+    background-color: #f2f2f2;
+}
+
+.email-row__options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-shrink: 0;
+}
+
+.email-row__subject {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.email-row__message {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.email-row__body {
+    color: #80868b;
+    font-weight: 400;
+}
+
+.email-row__time {
+    flex-shrink: 0;
+    font-size: 12px;
+}
